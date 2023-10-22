@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --white: #fff;
+    --black: #111;
+    --blue: #3a80e9;
+    --grey: #888;
+    --darkgrey: #1b1b1b;
+    --green: #61c96f;
+    --red: #f94141;
+}
+
+
+[data-theme="dark"] {
+    --white: #ffffff;
+    --black: #111;
+    --grey: #888;
+    --darkgrey: #1b1b1b;
+  }
+  
+  [data-theme="light"] {
+    --white: #111;
+    --black: #fff;
+    --grey: #888;
+    --darkgrey: #f3f3f3;
+  }
+
+body {
+    margin: 0;
+    font-family: "inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--black);
+    color: var(--white);
+     overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}
+
+a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.grey-wrapper {
+    display: block; 
+    width: 90%;
+    background-color: var(--darkgrey);
+    margin: 1.5rem auto;
+    border-radius: 0.8rem;
+    padding: 1rem 1rem;
+}
+
+.coins-days-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    gap: 2rem;
+}
+
+.add-to-watchlist{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    margin-left: auto;
+}
+
+.empty-watchlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
